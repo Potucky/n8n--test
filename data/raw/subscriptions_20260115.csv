@@ -1,0 +1,9 @@
+subscription_id,customer_id,plan_code,status,monthly_amount,updated_at,change_type,extract_seq
+sub_1001,cust_01,pro,active,49.00,2026-01-15 10:00:00,UPSERT,1
+sub_1002,cust_02,basic,active,19.00,2026-01-15 11:00:00,UPSERT,1
+sub_1003,cust_03,pro,active,49.00,2026-01-15 12:00:00,UPSERT,1
+sub_1003,cust_03,pro,active,59.00,2026-01-15 12:30:00,UPSERT,2
+sub_1004,cust_04,enterprise,active,199.00,2026-01-15 13:00:00,UPSERT,1
+sub_1005,cust_05,basic,past_due,19.00,2026-01-15 14:00:00,UPSERT,1
+sub_1090,cust_90,basic,active,19.00,2026-01-14 23:00:00,UPSERT,1
+sub_1091,cust_91,basic,active,19.00,2026-01-16 00:00:00,UPSERT,1
