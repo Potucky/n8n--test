@@ -1,0 +1,15 @@
+# Local stand-in for a Snowflake database. No account and no credentials.
+# Override the file with WAREHOUSE_CONFIG, and the path with WAREHOUSE_DB_PATH.
+database_path: ":memory:"
+
+# Half-open extract windows: updated_at >= extract_from AND updated_at < extract_to.
+# The second window starts where the first one ends.
+loads:
+  - batch_id: "2026-01-15"
+    path: data/raw/subscriptions_20260115.csv
+    extract_from: "2026-01-15 00:00:00"
+    extract_to: "2026-01-16 00:00:00"
+  - batch_id: "2026-01-16"
+    path: data/raw/subscriptions_20260116.json
+    extract_from: "2026-01-16 00:00:00"
+    extract_to: "2026-01-17 00:00:00"
